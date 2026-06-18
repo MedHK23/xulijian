@@ -27,46 +27,71 @@ If you are interested in related research, please feel free to contact me by ema
 - **2025**: One paper got accepted by **IEEE Transactions on Medical Imaging (TMI)** (JCR一区, 医学影像处理顶刊)
 
 
-
 ## Selected Publications | [Google Scholar](https://scholar.google.com/citations?hl=en&user=K-PZJhkAAAAJ)
 
 ---
 
-### A unified multi-task framework enables interpretable chest radiograph analysis
-
-Lijian Xu, Ziyu Ni, Xinglong Liu, Xiaosong Wang, Hongsheng Li, Shaoting Zhang.
-
-**Med (2026).** (Cell子刊, IF = 11.8)
-
-[Paper](http://arxiv.org/abs/2606.03417) [Code](#)
-
----
-
-### SCALAR: Spatial-Concept Alignment for Robust Vision in Harsh Open World
-
-Xiaoyu Yang, Lijian Xu*, Xingyu Zeng, Xiaosong Wang, Hongsheng Li, Shaoting Zhang.
-
-**Pattern Recognition (2026).** (JCR一区国际期刊)
-
-[Paper](https://www.sciencedirect.com/science/article/pii/S0031320326001688) [Code](#)
+<table>
+  <tr>
+    <td width="30%">
+      <img src="images/med2026.JPG" alt="Med 2026" width="100%">
+    </td>
+    <td width="70%">
+      <strong>A unified multi-task framework enables interpretable chest radiograph analysis</strong><br>
+      Lijian Xu, Ziyu Ni, Xinglong Liu, Xiaosong Wang, Hongsheng Li, Shaoting Zhang.<br>
+      <em>Med (2026).</em> (Cell子刊, IF = 11.8)<br>
+      [Paper](http://arxiv.org/abs/2606.03417) [Code](#)
+    </td>
+  </tr>
+</table>
 
 ---
 
-### TC-SSA: Token Compression via Semantic Slot Aggregation for Gigapixel Pathology Reasoning
-
-Chen Zhuo, Xiaoyu Yang, Lijian Xu*.
-
-**MICCAI 2026.** (CCF B类)
-
-[Paper](https://arxiv.org/pdf/2603.01143) [Code](#)
+<table>
+  <tr>
+    <td width="30%">
+      <img src="images/pr2026.png" alt="Pattern Recognition 2026" width="100%">
+    </td>
+    <td width="70%">
+      <strong>SCALAR: Spatial-Concept Alignment for Robust Vision in Harsh Open World</strong><br>
+      Xiaoyu Yang, Lijian Xu*, Xingyu Zeng, Xiaosong Wang, Hongsheng Li, Shaoting Zhang.<br>
+      <em>Pattern Recognition (2026).</em> (JCR一区国际期刊)<br>
+      [Paper](https://www.sciencedirect.com/science/article/pii/S0031320326001688) [Code](#)
+    </td>
+  </tr>
+</table>
 
 ---
 
-### Segmentation and Vascular Vectorization for Coronary Artery by Geometry-Based Cascaded Neural Network
+<table>
+  <tr>
+    <td width="30%">
+      <img src="images/miccai2026.png" alt="MICCAI 2026" width="100%">
+    </td>
+    <td width="70%">
+      <strong>TC-SSA: Token Compression via Semantic Slot Aggregation for Gigapixel Pathology Reasoning</strong><br>
+      Chen Zhuo, Xiaoyu Yang, Lijian Xu*.<br>
+      <em>MICCAI 2026.</em> (CCF B类)<br>
+      [Paper](https://arxiv.org/pdf/2603.01143) [Code](#)
+    </td>
+  </tr>
+</table>
 
-Xiaoyu Yang, Lijian Xu*, Qing Xia, Simon C. H. Yu, Hongsheng Li, Shaoting Zhang.
+---
 
-**IEEE Transactions on Medical Imaging (2025).** (JCR一区, 医学影像处理顶刊)
+<table>
+  <tr>
+    <td width="30%">
+      <img src="images/tmi2025.png" alt="TMI 2025" width="100%">
+    </td>
+    <td width="70%">
+      <strong>Segmentation and Vascular Vectorization for Coronary Artery by Geometry-Based Cascaded Neural Network</strong><br>
+      Xiaoyu Yang, Lijian Xu*, Qing Xia, Simon C. H. Yu, Hongsheng Li, Shaoting Zhang.<br>
+      <em>IEEE Transactions on Medical Imaging (2025).</em> (JCR一区, 医学影像处理顶刊)<br>
+      [Paper](https://arxiv.org/pdf/2305.04208) [Code](#)
+    </td>
+  </tr>
+</table>
 
 [Paper](https://arxiv.org/pdf/2305.04208) [Code](#)
 
