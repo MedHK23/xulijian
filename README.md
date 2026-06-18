@@ -20,7 +20,7 @@ His research focuses on **multimodal world models, intelligent robotics, and com
 * Knowledge–data synergy
 * Interpretability of large-scale multimodal systems
 
-He has published over **50 papers** in top-tier venues, including *Med (Cell Press)*, ICML, and *Pattern Recognition*. He is a core contributor to the **Puyi medical multimodal foundation model**, developed in collaboration with Shanghai AI Lab, and has participated in building one of China’s largest medical AI training infrastructures.
+He has published over **60 papers** in top-tier venues, including *Med (Cell Press)*, ICML, and *Pattern Recognition*. He is a core contributor to the **Puyi medical multimodal foundation model**, developed in collaboration with Shanghai AI Lab, and has participated in building one of China’s largest medical AI training infrastructures.
 
 He has also worked closely with Huawei on **AI system migration from NVIDIA to Ascend platforms**, enabling full-stack domestic deployment. His translational work includes the medical AI product **SenseCare**, widely used in clinical environments.
 
@@ -38,7 +38,6 @@ He has also worked closely with Huawei on **AI system migration from NVIDIA to A
 * **2025** — One paper accepted by **IEEE TMI** (JCR Q1)
 
 ---
-
 ## 📚 Selected Publications
 
 ### 🧠 Med 2026
@@ -47,7 +46,7 @@ He has also worked closely with Huawei on **AI system migration from NVIDIA to A
 Lijian Xu, Ziyu Ni, Xinglong Liu, Xiaosong Wang, Hongsheng Li, Shaoting Zhang
 *Med (2026)*
 
-[Paper] [Code]
+[Paper](https://arxiv.org/abs/2606.03417) [Code](#)
 
 ---
 
@@ -57,7 +56,7 @@ Lijian Xu, Ziyu Ni, Xinglong Liu, Xiaosong Wang, Hongsheng Li, Shaoting Zhang
 Xiaoyu Yang, Lijian Xu*, Xingyu Zeng, Xiaosong Wang, Hongsheng Li, Shaoting Zhang
 *Pattern Recognition (2026)*
 
-[Paper] [Code]
+[Paper](https://www.sciencedirect.com/science/article/pii/S0031320326001688) [Code](#)
 
 ---
 
@@ -67,7 +66,7 @@ Xiaoyu Yang, Lijian Xu*, Xingyu Zeng, Xiaosong Wang, Hongsheng Li, Shaoting Zhan
 Chen Zhuo, Xiaoyu Yang, Lijian Xu*
 *MICCAI 2026*
 
-[Paper] [Code]
+[Paper](https://arxiv.org/pdf/2603.01143) [Code](#)
 
 ---
 
@@ -77,13 +76,14 @@ Chen Zhuo, Xiaoyu Yang, Lijian Xu*
 Xiaoyu Yang, Lijian Xu*, Qing Xia, Simon C. H. Yu, Hongsheng Li, Shaoting Zhang
 *IEEE Transactions on Medical Imaging (2025)*
 
-[Paper] [Code]
+[Paper](https://arxiv.org/pdf/2305.04208) [Code](#)
+
 
 ---
 
 ## 🔗 More
 
-* **Google Scholar**: [Link]
+* **Google Scholar**: [https://scholar.google.com/citations?hl=en&user=K-PZJhkAAAAJ]
 
 ---
 
