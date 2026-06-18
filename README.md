@@ -1,10 +1,11 @@
-# Dr. Lijian Xu (徐利建)
+# Prof. Lijian Xu (徐利建)
 
-**Associate Professor**
 Institute of Artificial Intelligence
 Shenzhen University of Advanced Technology (SUAT)
 
 * **Email**: xulijian AT suat-sz.edu.cn
+[Google Scholar](https://scholar.google.com/citations?hl=en&user=K-PZJhkAAAAJ) 
+
 
 ---
 
@@ -81,11 +82,7 @@ Xiaoyu Yang, Lijian Xu*, Qing Xia, Simon C. H. Yu, Hongsheng Li, Shaoting Zhang
 
 ---
 
-## 🔗 More
 
-* **Google Scholar**: [https://scholar.google.com/citations?hl=en&user=K-PZJhkAAAAJ]
-
----
 
 ## 🤝 Collaboration
 
