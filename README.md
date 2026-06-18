@@ -25,3 +25,49 @@ If you are interested in related research, please feel free to contact me by ema
 - **2026**: One paper got accepted by **Journal of Crystal Growth** (AI4S晶体领域顶刊)
 - **2025**: One paper got accepted by **International Conference on Machine Learning (ICML)** (CCF A类)
 - **2025**: One paper got accepted by **IEEE Transactions on Medical Imaging (TMI)** (JCR一区, 医学影像处理顶刊)
+
+
+
+## Selected Publications | [Google Scholar](https://scholar.google.com/citations?hl=en&user=K-PZJhkAAAAJ)
+
+---
+
+### A unified multi-task framework enables interpretable chest radiograph analysis
+
+Lijian Xu, Ziyu Ni, Xinglong Liu, Xiaosong Wang, Hongsheng Li, Shaoting Zhang.
+
+**Med (2026).** (Cell子刊, IF = 11.8)
+
+[Paper](http://arxiv.org/abs/2606.03417) [Code](#)
+
+---
+
+### SCALAR: Spatial-Concept Alignment for Robust Vision in Harsh Open World
+
+Xiaoyu Yang, Lijian Xu*, Xingyu Zeng, Xiaosong Wang, Hongsheng Li, Shaoting Zhang.
+
+**Pattern Recognition (2026).** (JCR一区国际期刊)
+
+[Paper](https://www.sciencedirect.com/science/article/pii/S0031320326001688) [Code](#)
+
+---
+
+### TC-SSA: Token Compression via Semantic Slot Aggregation for Gigapixel Pathology Reasoning
+
+Chen Zhuo, Xiaoyu Yang, Lijian Xu*.
+
+**MICCAI 2026.** (CCF B类)
+
+[Paper](https://arxiv.org/pdf/2603.01143) [Code](#)
+
+---
+
+### Segmentation and Vascular Vectorization for Coronary Artery by Geometry-Based Cascaded Neural Network
+
+Xiaoyu Yang, Lijian Xu*, Qing Xia, Simon C. H. Yu, Hongsheng Li, Shaoting Zhang.
+
+**IEEE Transactions on Medical Imaging (2025).** (JCR一区, 医学影像处理顶刊)
+
+[Paper](https://arxiv.org/pdf/2305.04208) [Code](#)
+
+---
