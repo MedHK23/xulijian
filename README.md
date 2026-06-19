@@ -34,12 +34,12 @@ He has also worked closely with Huawei on **AI system migration from NVIDIA to A
 
 ## 🔥 Recent Updates
 
-* **2026** — One paper accepted by **Med** (Cell Press, IF 11.8)
+* **2026** — One paper accepted by **Med** (Cell Press, IF 13.3)
 * **2026** — One paper accepted by **MICCAI 2026** (CCF B)
-* **2026** — One paper accepted by **Pattern Recognition** (JCR Q1)
+* **2026** — One paper accepted by **Pattern Recognition** (JCR Q1, IF 9.1)
 * **2026** — One paper accepted by **Journal of Crystal Growth**
 * **2025** — One paper accepted by **ICML** (CCF A)
-* **2025** — One paper accepted by **IEEE TMI** (JCR Q1)
+* **2025** — One paper accepted by **IEEE TMI** (JCR Q1, IF 12.4)
 
 ---
 ## 📚 Selected Publications
