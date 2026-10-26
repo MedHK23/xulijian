@@ -38,6 +38,10 @@
       line-height: 1.7;
     }
 
+    body.lightbox-open {
+      overflow: hidden;
+    }
+
     a {
       color: var(--primary);
       text-decoration: none;
@@ -49,6 +53,10 @@
 
     img {
       max-width: 100%;
+    }
+
+    button {
+      font: inherit;
     }
 
     .container {
@@ -86,7 +94,7 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 22px;
+      gap: 19px;
     }
 
     .nav-links a {
@@ -187,6 +195,7 @@
     }
 
     .button-primary:hover {
+      color: white;
       background: #123e85;
       text-decoration: none;
     }
@@ -221,7 +230,7 @@
       font-size: 13px;
     }
 
-    /* ===== 3. General sections ===== */
+    /* ===== 3. General Sections ===== */
 
     .section {
       padding: 68px 0;
@@ -288,7 +297,7 @@
       font-size: 13px;
     }
 
-    /* ===== 4. Research directions ===== */
+    /* ===== 4. Research Directions ===== */
 
     .research-grid {
       display: grid;
@@ -330,6 +339,35 @@
 
     #team {
       scroll-margin-top: calc(var(--nav-height) + 18px);
+    }
+
+    .lab-photo-section {
+      margin: 30px 0 48px;
+    }
+
+    .lab-photo-figure {
+      margin: 0;
+      text-align: center;
+    }
+
+    .lab-group-photo {
+      display: block;
+      width: 100%;
+      max-width: 1000px;
+      max-height: 600px;
+      height: auto;
+      margin: 0 auto;
+      object-fit: contain;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface);
+      box-shadow: 0 8px 28px rgba(16, 24, 40, 0.08);
+    }
+
+    .lab-photo-figure figcaption {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
     }
 
     .team-group {
@@ -416,7 +454,155 @@
       font-size: 13px;
     }
 
-    /* ===== 6. News ===== */
+    /* ===== 6. Gallery ===== */
+
+    #gallery {
+      scroll-margin-top: calc(var(--nav-height) + 18px);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .gallery-item {
+      min-width: 0;
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: white;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(16, 24, 40, 0.08);
+    }
+
+    .gallery-image-button {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding: 0;
+      overflow: hidden;
+      border: 0;
+      background: #f1f5f9;
+      cursor: zoom-in;
+    }
+
+    .gallery-image-button img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover .gallery-image-button img {
+      transform: scale(1.04);
+    }
+
+    .gallery-zoom {
+      position: absolute;
+      right: 12px;
+      bottom: 12px;
+      display: grid;
+      width: 32px;
+      height: 32px;
+      place-items: center;
+      border-radius: 50%;
+      color: white;
+      background: rgba(15, 23, 42, 0.72);
+      font-size: 22px;
+    }
+
+    .gallery-item figcaption {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      padding: 14px 16px 17px;
+    }
+
+    .gallery-item figcaption strong {
+      font-size: 15px;
+      font-weight: 650;
+    }
+
+    .gallery-item figcaption span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* ===== Gallery Lightbox ===== */
+
+    .gallery-lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 24px;
+    }
+
+    .gallery-lightbox.open {
+      display: flex;
+    }
+
+    .lightbox-backdrop {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      border: 0;
+      background: rgba(0, 0, 0, 0.88);
+      cursor: zoom-out;
+    }
+
+    .lightbox-content {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 1100px;
+      text-align: center;
+      pointer-events: none;
+    }
+
+    .lightbox-content img {
+      display: block;
+      max-width: 100%;
+      max-height: 78vh;
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+      object-fit: contain;
+    }
+
+    .lightbox-content p {
+      margin: 14px 0 0;
+      color: white;
+      font-size: 14px;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 16px;
+      right: 22px;
+      z-index: 2;
+      width: 44px;
+      height: 44px;
+      border: 0;
+      border-radius: 50%;
+      color: white;
+      background: rgba(255, 255, 255, 0.15);
+      cursor: pointer;
+      font-size: 30px;
+    }
+
+    /* ===== 7. News ===== */
 
     .news-list {
       display: grid;
@@ -441,7 +627,7 @@
       margin: 0;
     }
 
-    /* ===== 7. Publications ===== */
+    /* ===== 8. Publications ===== */
 
     .publication-filters {
       display: flex;
@@ -514,7 +700,7 @@
       font-size: 13px;
     }
 
-    /* ===== 8. Collaboration and contact ===== */
+    /* ===== 9. Collaboration and Contact ===== */
 
     .collaboration-box {
       padding: 28px;
@@ -552,7 +738,7 @@
       overflow-wrap: anywhere;
     }
 
-    /* ===== 9. Footer ===== */
+    /* ===== 10. Footer ===== */
 
     footer {
       padding: 28px 0;
@@ -567,15 +753,15 @@
       margin: 4px 0;
     }
 
-    /* ===== 10. Responsive layout ===== */
+    /* ===== 11. Responsive Layout ===== */
 
     @media (max-width: 960px) {
       .nav-links {
-        gap: 13px;
+        gap: 12px;
       }
 
       .nav-links a {
-        font-size: 13px;
+        font-size: 12px;
       }
 
       .hero-grid {
@@ -584,6 +770,11 @@
 
       .team-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
       }
     }
 
@@ -645,9 +836,17 @@
       .section {
         padding: 50px 0;
       }
+
+      .lab-photo-section {
+        margin: 22px 0 36px;
+      }
+
+      .lab-group-photo {
+        border-radius: 10px;
+      }
     }
 
-    @media (max-width: 430px) {
+    @media (max-width: 520px) {
       .container {
         width: calc(100% - 28px);
       }
@@ -660,7 +859,8 @@
         grid-template-columns: 1fr;
       }
 
-      .team-grid {
+      .team-grid,
+      .gallery-grid {
         grid-template-columns: 1fr;
       }
 
@@ -672,6 +872,14 @@
       .publication {
         padding: 17px;
       }
+
+      .gallery-item figcaption {
+        padding: 12px 14px 15px;
+      }
+
+      .gallery-lightbox {
+        padding: 48px 12px;
+      }
     }
   </style>
 </head>
@@ -680,7 +888,6 @@
 
   <!-- =====================================================
        SECTION 1: NAVIGATION
-       修改导航栏时，在这里增删菜单项。
        ===================================================== -->
 
   <header class="navbar">
@@ -701,6 +908,7 @@
         <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#team">Team</a>
+        <a href="#gallery">Gallery</a>
         <a href="#news">News</a>
         <a href="#publications">Publications</a>
         <a href="#collaboration">Collaboration</a>
@@ -714,8 +922,7 @@
 
     <!-- =====================================================
          SECTION 2: HOME / HERO
-         修改姓名、单位、个人照片和简介。
-         图片放在仓库 images/profile.jpg。
+         个人照片路径：images/xulijian.jpg
          ===================================================== -->
 
     <section class="hero" id="home">
@@ -759,7 +966,7 @@
         <div class="profile-wrap">
           <img
             class="profile-photo"
-            src="images/profile.jpg"
+            src="images/xulijian.jpg"
             alt="Prof. Lijian Xu"
             onerror="this.style.display='none';">
 
@@ -774,7 +981,6 @@
 
     <!-- =====================================================
          SECTION 3: ABOUT
-         修改个人简介、工作经历和统计信息。
          ===================================================== -->
 
     <section class="section" id="about">
@@ -835,7 +1041,6 @@
 
     <!-- =====================================================
          SECTION 4: RESEARCH DIRECTIONS
-         修改研究方向时，增删 research-card 即可。
          ===================================================== -->
 
     <section class="section section-alt" id="research">
@@ -899,9 +1104,7 @@
 
     <!-- =====================================================
          SECTION 5: TEAM
-         新增团队导航后，主要维护这一部分。
-         目前只列出已知的教师信息。
-         添加学生时，复制对应的 team-card 模板。
+         实验室合照放在标题之后、Faculty 之前。
          ===================================================== -->
 
     <section class="section" id="team">
@@ -914,6 +1117,24 @@
             We welcome motivated students and collaborators interested
             in multimodal AI, medical AI, and embodied intelligence.
           </p>
+        </div>
+
+        <!-- Laboratory Group Photo -->
+        <!-- 上传至 images/gallery/lab-group.jpg -->
+
+        <div class="lab-photo-section">
+          <figure class="lab-photo-figure">
+            <img
+              src="images/gallery/lab-group.jpg"
+              alt="Our Research Team at SUAT"
+              class="lab-group-photo"
+              loading="lazy"
+              onerror="this.closest('.lab-photo-figure').style.display='none';">
+
+            <figcaption>
+              Our Research Team · Shenzhen University of Advanced Technology
+            </figcaption>
+          </figure>
         </div>
 
 
@@ -946,65 +1167,81 @@
               </p>
             </article>
 
-            <!--
-              Add more faculty members here.
-
-              Copy the article above and update:
-              1. Photo path
-              2. Name
-              3. Position
-              4. Research interests
-              5. Personal homepage link
-            -->
+            <!-- Add more faculty cards here if needed. -->
 
           </div>
         </div>
 
 
-        <!-- PhD students -->
+        <!-- Postdoctoral Fellows -->
+
+        <div class="team-group">
+          <h3>Postdoctoral Fellows</h3>
+
+          <div class="team-grid">
+
+            <article class="team-card">
+              <img
+                class="team-photo"
+                src="images/x.jpg"
+                alt="Postdoctoral Fellow"
+                onerror="this.outerHTML='<div class=&quot;team-placeholder&quot;>?</div>'">
+
+              <h4>Name to be added</h4>
+              <p class="team-role">Postdoctoral Fellow</p>
+              <p class="team-interest">
+                Research interests to be added.
+              </p>
+            </article>
+
+          </div>
+        </div>
+
+
+        <!-- PhD Students -->
 
         <div class="team-group">
           <h3>Ph.D. Students</h3>
 
           <div class="team-grid">
 
-            
-              <!-- Add Ph.D. students here after confirming their information. -->
+            <article class="team-card">
+              <img
+                class="team-photo"
+                src="images/helandi.jpg"
+                alt="Landi He"
+                onerror="this.outerHTML='<div class=&quot;team-placeholder&quot;>何</div>'">
 
-              Template:
+              <h4>Landi He</h4>
+              <p class="team-role">Ph.D. Student</p>
+              <p class="team-interest">
+                Research interests to be added.
+              </p>
+            </article>
 
-              <article class="team-card">
-                <img class="team-photo"
-                     src="images/helandi.jpg"
-                     alt="Landi He">
-                <h4>Landi He</h4>
-                <p class="team-role">Ph.D. Student</p>
-                <p class="team-interest">
-                  Research interests: ...
-                </p>
-              </article>
+            <article class="team-card">
+              <img
+                class="team-photo"
+                src="images/dengtianchi.jpg"
+                alt="Tianchi Deng"
+                onerror="this.outerHTML='<div class=&quot;team-placeholder&quot;>邓</div>'">
 
-              <article class="team-card">
-                <img class="team-photo"
-                     src="images/dengtianchi.jpg"
-                     alt="Landi He">
-                <h4>Tianchi Deng</h4>
-                <p class="team-role">Ph.D. Student</p>
-                <p class="team-interest">
-                  Research interests: ...
-                </p>
-              </article>
-           
+              <h4>Tianchi Deng</h4>
+              <p class="team-role">Ph.D. Student</p>
+              <p class="team-interest">
+                Research interests to be added.
+              </p>
+            </article>
 
           </div>
 
           <p class="team-note">
-            Student profiles will be added as member information becomes available.
+            Student profiles will be updated as member information becomes available.
           </p>
         </div>
 
 
-        <!-- Master's students -->
+        <!-- Master's Students -->
 
         <div class="team-group">
           <h3>Master's Students</h3>
@@ -1012,35 +1249,44 @@
           <div class="team-grid">
 
             <article class="team-card">
-                <img class="team-photo"
-                     src="images/chenzehong.jpg"
-                     alt="Landi He">
-                <h4>Zehong Chen</h4>
-                <p class="team-role">Master.2 Student</p>
-                <p class="team-interest">
-                  Research interests: ...
-                </p>
-              </article>
+              <img
+                class="team-photo"
+                src="images/chenzehong.jpg"
+                alt="Zehong Chen"
+                onerror="this.outerHTML='<div class=&quot;team-placeholder&quot;>陈</div>'">
 
-            <article class="team-card">
-              <img class="team-photo"
-                    src="images/yuansongjie.jpg"
-                    alt="Songjie Yuan">
-              <h4>Songjie Yuan</h4>
-              <p class="team-role">Master.1 Student</p>
+              <h4>Zehong Chen</h4>
+              <p class="team-role">Master's Student · Year 2</p>
               <p class="team-interest">
-                Research interests: ...
+                Research interests to be added.
               </p>
             </article>
 
             <article class="team-card">
-              <img class="team-photo"
-                    src="images/wujingpeng.jpg"
-                    alt="Jingpeng Wu">
-              <h4>Jingpeng Wu</h4>
-              <p class="team-role">Master.1 Student</p>
+              <img
+                class="team-photo"
+                src="images/yuansongjie.jpg"
+                alt="Songjie Yuan"
+                onerror="this.outerHTML='<div class=&quot;team-placeholder&quot;>袁</div>'">
+
+              <h4>Songjie Yuan</h4>
+              <p class="team-role">Master's Student · Year 1</p>
               <p class="team-interest">
-                Research interests: ...
+                Research interests to be added.
+              </p>
+            </article>
+
+            <article class="team-card">
+              <img
+                class="team-photo"
+                src="images/wujingpeng.jpg"
+                alt="Jingpeng Wu"
+                onerror="this.outerHTML='<div class=&quot;team-placeholder&quot;>吴</div>'">
+
+              <h4>Jingpeng Wu</h4>
+              <p class="team-role">Master's Student · Year 1</p>
+              <p class="team-interest">
+                Research interests to be added.
               </p>
             </article>
 
@@ -1048,81 +1294,121 @@
         </div>
 
 
-        <!-- Undergraduate students and research assistants -->
+        <!-- Undergraduate Students -->
 
         <div class="team-group">
-          <h3>Undergraduate Students & Research Assistants</h3>
+          <h3>Undergraduate Students</h3>
 
           <div class="team-grid">
 
             <article class="team-card">
-                <img class="team-photo"
-                     src="images/zhangyi.jpg"
-                     alt="Yi Zhang">
-                <h4>Yi Zhang</h4>
-                <p class="team-role">Senior</p>
-                <p class="team-interest">
-                  Research interests: ...
-                </p>
-              </article>
+              <img
+                class="team-photo"
+                src="images/zhangyi.jpg"
+                alt="Yi Zhang"
+                onerror="this.outerHTML='<div class=&quot;team-placeholder&quot;>张</div>'">
 
-
-            <article class="team-card">
-                <img class="team-photo"
-                     src="images/chenjingzhi.jpg"
-                     alt="Landi He">
-                <h4>Jingzhi Chen</h4>
-                <p class="team-role">Junior</p>
-                <p class="team-interest">
-                  Research interests: ...
-                </p>
-              </article>
-
+              <h4>Yi Zhang</h4>
+              <p class="team-role">Senior Undergraduate</p>
+              <p class="team-interest">
+                Research interests to be added.
+              </p>
+            </article>
 
             <article class="team-card">
-              <img class="team-photo"
-                    src="images/wenzehao.jpg"
-                    alt="Zehao Wen">
+              <img
+                class="team-photo"
+                src="images/chenjingzhi.jpg"
+                alt="Jingzhi Chen"
+                onerror="this.outerHTML='<div class=&quot;team-placeholder&quot;>陈</div>'">
+
+              <h4>Jingzhi Chen</h4>
+              <p class="team-role">Junior Undergraduate</p>
+              <p class="team-interest">
+                Research interests to be added.
+              </p>
+            </article>
+
+            <article class="team-card">
+              <img
+                class="team-photo"
+                src="images/wenzehao.jpg"
+                alt="Zehao Wen"
+                onerror="this.outerHTML='<div class=&quot;team-placeholder&quot;>温</div>'">
+
               <h4>Zehao Wen</h4>
-              <p class="team-role">Sophomore</p>
+              <p class="team-role">Sophomore Undergraduate</p>
               <p class="team-interest">
-                Research interests: ...
+                Research interests to be added.
               </p>
             </article>
 
             <article class="team-card">
-              <img class="team-photo"
-                    src="images/wupeihang.jpg"
-                    alt="Peihang Wu">
+              <img
+                class="team-photo"
+                src="images/wupeihang.jpg"
+                alt="Peihang Wu"
+                onerror="this.outerHTML='<div class=&quot;team-placeholder&quot;>吴</div>'">
+
               <h4>Peihang Wu</h4>
-              <p class="team-role">Sophomore</p>
+              <p class="team-role">Sophomore Undergraduate</p>
               <p class="team-interest">
-                Research interests: ...
+                Research interests to be added.
               </p>
             </article>
 
             <article class="team-card">
-              <img class="team-photo"
-                    src="images/zhengxiaoyu.jpg"
-                    alt="Xiaoyu Zheng">
+              <img
+                class="team-photo"
+                src="images/zhengxiaoyu.jpg"
+                alt="Xiaoyu Zheng"
+                onerror="this.outerHTML='<div class=&quot;team-placeholder&quot;>郑</div>'">
+
               <h4>Xiaoyu Zheng</h4>
-              <p class="team-role">Sophomore</p>
+              <p class="team-role">Sophomore Undergraduate</p>
               <p class="team-interest">
-                Research interests: ...
+                Research interests to be added.
               </p>
             </article>
 
             <article class="team-card">
-              <img class="team-photo"
-                    src="images/zhouzineng.jpg"
-                    alt="Zineng Zhou">
+              <img
+                class="team-photo"
+                src="images/zhouzineng.jpg"
+                alt="Zineng Zhou"
+                onerror="this.outerHTML='<div class=&quot;team-placeholder&quot;>周</div>'">
+
               <h4>Zineng Zhou</h4>
-              <p class="team-role">Sophomore</p>
+              <p class="team-role">Sophomore Undergraduate</p>
               <p class="team-interest">
-                Research interests: ...
+                Research interests to be added.
               </p>
             </article>
 
+          </div>
+        </div>
+
+
+        <!-- Visiting Students -->
+
+        <div class="team-group">
+          <h3>Visiting Students</h3>
+
+          <div class="team-grid">
+
+            <article class="team-card">
+              <img
+                class="team-photo"
+                src="images/x.jpg"
+                alt="Visiting Student"
+                onerror="this.outerHTML='<div class=&quot;team-placeholder&quot;>?</div>'">
+
+              <h4>Name to be added</h4>
+              <p class="team-role">Visiting Student</p>
+              <p class="team-interest">
+                Research interests to be added.
+              </p>
+            </article>
 
           </div>
         </div>
@@ -1132,12 +1418,221 @@
 
 
     <!-- =====================================================
-         SECTION 6: NEWS
-         修改日期、会议录用、项目进展等新闻。
-         请只保留已经确认的消息。
+         SECTION 6: GALLERY
+         图片统一放在 images/gallery/ 文件夹。
+         尚未上传的图片会自动隐藏。
          ===================================================== -->
 
-    <section class="section section-alt" id="news">
+    <section class="section section-alt" id="gallery">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">LIFE IN OUR LAB</p>
+          <h2>Lab Gallery</h2>
+          <p class="section-intro">
+            A glimpse into our research environment, academic exchanges,
+            industry collaborations, robotics experiments, and team life.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+
+          <!-- 1. Laboratory Group Photo -->
+
+          <figure class="gallery-item">
+            <button
+              class="gallery-image-button"
+              type="button"
+              data-full="images/gallery/lab-group4.jpg"
+              data-caption="Our Research Team"
+              aria-label="View Our Research Team photo">
+
+              <img
+                src="images/gallery/lab-group.jpg"
+                alt="Our Research Team"
+                loading="lazy"
+                onerror="this.closest('.gallery-item').style.display='none';">
+
+              <span class="gallery-zoom" aria-hidden="true">＋</span>
+            </button>
+
+            <figcaption>
+              <strong>Our Research Team</strong>
+              <span>Laboratory Group Photo</span>
+            </figcaption>
+          </figure>
+
+
+          <!-- 2. Laboratory Space -->
+
+          <figure class="gallery-item">
+            <button
+              class="gallery-image-button"
+              type="button"
+              data-full="images/gallery/lab-space.jpg"
+              data-caption="Laboratory Space"
+              aria-label="View Laboratory Space photo">
+
+              <img
+                src="images/gallery/lab-space.jpg"
+                alt="Laboratory Space"
+                loading="lazy"
+                onerror="this.closest('.gallery-item').style.display='none';">
+
+              <span class="gallery-zoom" aria-hidden="true">＋</span>
+            </button>
+
+            <figcaption>
+              <strong>Laboratory Space</strong>
+              <span>Research Environment</span>
+            </figcaption>
+          </figure>
+
+
+          <!-- 3. Academic Exchange -->
+
+          <figure class="gallery-item">
+            <button
+              class="gallery-image-button"
+              type="button"
+              data-full="images/gallery/academic-meeting.jpg"
+              data-caption="Academic Exchange"
+              aria-label="View Academic Exchange photo">
+
+              <img
+                src="images/gallery/academic-meeting.jpg"
+                alt="Academic Exchange"
+                loading="lazy"
+                onerror="this.closest('.gallery-item').style.display='none';">
+
+              <span class="gallery-zoom" aria-hidden="true">＋</span>
+            </button>
+
+            <figcaption>
+              <strong>Academic Exchange</strong>
+              <span>Seminars and Research Discussions</span>
+            </figcaption>
+          </figure>
+
+
+          <!-- 4. Industry Collaboration -->
+
+          <figure class="gallery-item">
+            <button
+              class="gallery-image-button"
+              type="button"
+              data-full="images/gallery/industry-visit.jpg"
+              data-caption="Industry Collaboration"
+              aria-label="View Industry Collaboration photo">
+
+              <img
+                src="images/gallery/industry-visit.jpg"
+                alt="Industry Collaboration"
+                loading="lazy"
+                onerror="this.closest('.gallery-item').style.display='none';">
+
+              <span class="gallery-zoom" aria-hidden="true">＋</span>
+            </button>
+
+            <figcaption>
+              <strong>Industry Collaboration</strong>
+              <span>Company Visits and Partnerships</span>
+            </figcaption>
+          </figure>
+
+
+          <!-- 5. Robotics Experiments -->
+
+          <figure class="gallery-item">
+            <button
+              class="gallery-image-button"
+              type="button"
+              data-full="images/gallery/robotics.jpg"
+              data-caption="Embodied Intelligence Research"
+              aria-label="View Robotics Research photo">
+
+              <img
+                src="images/gallery/robotics.jpg"
+                alt="Embodied Intelligence Research"
+                loading="lazy"
+                onerror="this.closest('.gallery-item').style.display='none';">
+
+              <span class="gallery-zoom" aria-hidden="true">＋</span>
+            </button>
+
+            <figcaption>
+              <strong>Embodied Intelligence</strong>
+              <span>Robotics and Experiments</span>
+            </figcaption>
+          </figure>
+
+
+          <!-- 6. Team Activities -->
+
+          <figure class="gallery-item">
+            <button
+              class="gallery-image-button"
+              type="button"
+              data-full="images/gallery/team-activity.jpg"
+              data-caption="Team Activities"
+              aria-label="View Team Activities photo">
+
+              <img
+                src="images/gallery/team-activity.jpg"
+                alt="Team Activities"
+                loading="lazy"
+                onerror="this.closest('.gallery-item').style.display='none';">
+
+              <span class="gallery-zoom" aria-hidden="true">＋</span>
+            </button>
+
+            <figcaption>
+              <strong>Team Activities</strong>
+              <span>Life in Our Lab</span>
+            </figcaption>
+          </figure>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Gallery Lightbox -->
+
+    <div
+      class="gallery-lightbox"
+      id="galleryLightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Gallery image viewer"
+      aria-hidden="true">
+
+      <button
+        class="lightbox-backdrop"
+        id="lightboxBackdrop"
+        type="button"
+        aria-label="Close image viewer"></button>
+
+      <button
+        class="lightbox-close"
+        id="lightboxClose"
+        type="button"
+        aria-label="Close image viewer">×</button>
+
+      <div class="lightbox-content">
+        <img id="lightboxImage" src="" alt="">
+        <p id="lightboxCaption"></p>
+      </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         SECTION 7: NEWS
+         ===================================================== -->
+
+    <section class="section" id="news">
       <div class="container">
 
         <div class="section-heading">
@@ -1163,30 +1658,17 @@
             </p>
           </article>
 
-          <!--
-            Add new announcements here.
-
-            Example:
-            <article class="news-item">
-              <div class="news-date">2026.10</div>
-              <p class="news-content">
-                Our paper has been accepted by [Conference/Journal].
-              </p>
-            </article>
-          -->
-
         </div>
       </div>
     </section>
 
 
     <!-- =====================================================
-         SECTION 7: PUBLICATIONS
-         修改论文标题、作者、期刊会议、年份和链接。
-         当前使用已有链接作为入口；请核对正式论文元数据。
+         SECTION 8: PUBLICATIONS
+         请在正式发布前核对论文的正式标题和作者。
          ===================================================== -->
 
-    <section class="section" id="publications">
+    <section class="section section-alt" id="publications">
       <div class="container">
 
         <div class="section-heading">
@@ -1222,9 +1704,7 @@
         <div class="publication-list">
 
           <article class="publication" data-year="2026">
-            <h3>
-              Research on Medical AI and Computational Pathology
-            </h3>
+            <h3>Research on Medical AI and Computational Pathology</h3>
             <p class="publication-venue">Med · 2026</p>
             <p>
               Authors and final paper title should be checked against
@@ -1238,9 +1718,7 @@
           </article>
 
           <article class="publication" data-year="2026">
-            <h3>
-              Research on Visual Representation and Pattern Recognition
-            </h3>
+            <h3>Research on Visual Representation and Pattern Recognition</h3>
             <p class="publication-venue">Pattern Recognition · 2026</p>
             <p>
               Authors and final paper title should be checked against
@@ -1254,9 +1732,7 @@
           </article>
 
           <article class="publication" data-year="2026">
-            <h3>
-              Research on Computational Pathology
-            </h3>
+            <h3>Research on Computational Pathology</h3>
             <p class="publication-venue">MICCAI · 2026</p>
             <p>
               Authors and final paper title should be checked against
@@ -1270,10 +1746,10 @@
           </article>
 
           <article class="publication" data-year="2025">
-            <h3>
-              Research on Medical Image Analysis
-            </h3>
-            <p class="publication-venue">IEEE Transactions on Medical Imaging · 2025</p>
+            <h3>Research on Medical Image Analysis</h3>
+            <p class="publication-venue">
+              IEEE Transactions on Medical Imaging · 2025
+            </p>
             <p>
               Authors and final paper title should be checked against
               the published article.
@@ -1284,18 +1760,6 @@
                  rel="noopener">Paper PDF ↗</a>
             </div>
           </article>
-
-          <!--
-            Add more papers by copying a publication block.
-
-            Remember to update:
-            - The exact paper title
-            - Full author list
-            - Journal or conference
-            - Publication year
-            - DOI, publisher, or arXiv link
-            - data-year to match the year filter
-          -->
 
         </div>
 
@@ -1310,11 +1774,10 @@
 
 
     <!-- =====================================================
-         SECTION 8: COLLABORATION
-         修改合作方向和招生信息。
+         SECTION 9: COLLABORATION
          ===================================================== -->
 
-    <section class="section section-alt" id="collaboration">
+    <section class="section" id="collaboration">
       <div class="container">
 
         <div class="section-heading">
@@ -1351,11 +1814,10 @@
 
 
     <!-- =====================================================
-         SECTION 9: CONTACT
-         修改邮箱、机构和其他联系方式。
+         SECTION 10: CONTACT
          ===================================================== -->
 
-    <section class="section" id="contact">
+    <section class="section section-alt" id="contact">
       <div class="container">
 
         <div class="section-heading">
@@ -1409,7 +1871,7 @@
 
 
   <!-- =====================================================
-       SECTION 10: FOOTER
+       SECTION 11: FOOTER
        ===================================================== -->
 
   <footer>
@@ -1421,8 +1883,8 @@
 
 
   <!-- =====================================================
-       SECTION 11: JAVASCRIPT
-       Mobile navigation, publication filters, current year.
+       SECTION 12: JAVASCRIPT
+       Mobile navigation, publication filters, gallery lightbox.
        ===================================================== -->
 
   <script>
@@ -1472,6 +1934,55 @@
     // Automatically update the footer year
     document.getElementById("currentYear").textContent =
       new Date().getFullYear();
+
+    // Gallery image lightbox
+    const galleryLightbox = document.getElementById("galleryLightbox");
+    const lightboxImage = document.getElementById("lightboxImage");
+    const lightboxCaption = document.getElementById("lightboxCaption");
+    const lightboxClose = document.getElementById("lightboxClose");
+    const lightboxBackdrop = document.getElementById("lightboxBackdrop");
+
+    let previousGalleryFocus = null;
+
+    function closeGalleryLightbox() {
+      galleryLightbox.classList.remove("open");
+      galleryLightbox.setAttribute("aria-hidden", "true");
+      lightboxImage.src = "";
+      document.body.classList.remove("lightbox-open");
+
+      if (previousGalleryFocus) {
+        previousGalleryFocus.focus();
+      }
+    }
+
+    document.querySelectorAll(".gallery-image-button").forEach(function (button) {
+      button.addEventListener("click", function () {
+        const imageUrl = button.dataset.full;
+        const caption = button.dataset.caption || "";
+
+        previousGalleryFocus = button;
+        lightboxImage.src = imageUrl;
+        lightboxImage.alt = caption;
+        lightboxCaption.textContent = caption;
+
+        galleryLightbox.classList.add("open");
+        galleryLightbox.setAttribute("aria-hidden", "false");
+        document.body.classList.add("lightbox-open");
+        lightboxClose.focus();
+      });
+    });
+
+    lightboxClose.addEventListener("click", closeGalleryLightbox);
+    lightboxBackdrop.addEventListener("click", closeGalleryLightbox);
+
+    document.addEventListener("keydown", function (event) {
+      if (
+        event.key === "Escape" &&
+        galleryLightbox.classList.contains("open")
+      ) {
+        closeGalleryLightbox();
+      }
+    });
   </script>
 
 </body>
